@@ -81,4 +81,14 @@ const propertySchema = new mongoose.Schema({
     },
     viewedBy: [{ type: String }],
  
-})
+
+}, 
+{
+  timestamps: true
+}
+
+
+)
+
+ const Property = mongoose.model("Property", propertySchema);
+    export default Property 

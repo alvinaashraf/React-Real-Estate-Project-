@@ -1,7 +1,7 @@
 import express from 'express'
-import { getAllProperties } from '../controllers/property.controller.js ';
-import { authorize, protect } from '../middlewares/auth.middleware';
-import { addProperty, deleteProperty, getMyProperties, getPropertyCount, getPropertyDetails, getSellerDashboard, updateProperty, updatePropertyStatus } from '../controllers/property.controller';
+import upload from '../middlewares/upload.middleware.js';
+import { authorize, protect } from '../middlewares/auth.middleware.js';
+import { addProperty,getAllProperties, deleteProperty, getMyProperties, getPropertyCount, getPropertyDetails, getSellerDashboard, updateProperty, updatePropertyStatus } from '../controllers/property.controller.js';
 
 
 

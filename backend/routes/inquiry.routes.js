@@ -1,4 +1,4 @@
-import express from 'expresss'
+import express from 'express'
 import { authorize, protect } from '../middlewares/auth.middleware.js'
 import { getSellerInquiries, markAsRead, sendInquiry } from '../controllers/inquiry.controller.js'
 

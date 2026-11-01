@@ -42,7 +42,7 @@ export const getSellerInquiries = async (req, res) => {
     try {
         const inquiries = await Inquiry.find({
             seller: req.user._id
-        }).populate("buyer", " name email phone ").populate("property", "title price images city").sort(createdAt: -1 )
+        }).populate("buyer", " name email phone ").populate("property", "title price images city").sort(createdAt,  -1 )
 
         res.json({
             success: true, 

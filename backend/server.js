@@ -8,6 +8,7 @@ import userRouter from './routes/user.routes.js'
 import propertyRouter from "./routes/property.routes.js";
 import inquiryRouter from "./routes/inquiry.routes.js";
 import wishListRouter from "./routes/wishlist.routes.js";
+import contactRouter from "./routes/contact.routes.js";
 
 // first step 
 const app = express();
@@ -28,6 +29,7 @@ app.use("/api/user", userRouter)
 app.use("/api/property", propertyRouter)
 app.use("/api/inquiry", inquiryRouter)
 app.use("/api/wishlist", wishListRouter )
+app.use("/api/contact", contactRouter)
 
 app.get("/", (req, res) => {
 

@@ -9,6 +9,7 @@ import propertyRouter from "./routes/property.routes.js";
 import inquiryRouter from "./routes/inquiry.routes.js";
 import wishListRouter from "./routes/wishlist.routes.js";
 import contactRouter from "./routes/contact.routes.js";
+import adminRouter from "./routes/admin.routes.js";
 
 // first step 
 const app = express();
@@ -30,6 +31,7 @@ app.use("/api/property", propertyRouter)
 app.use("/api/inquiry", inquiryRouter)
 app.use("/api/wishlist", wishListRouter )
 app.use("/api/contact", contactRouter)
+app.use("/api.admin", adminRouter)
 
 app.get("/", (req, res) => {
 

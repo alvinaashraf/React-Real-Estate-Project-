@@ -2,6 +2,8 @@ import express from "express";
 import Chat from "../models/chat.model.js";
 import {protect} from "../middlewares/auth.middleware.js"
 
+export const chatRouter = express.Router(); 
+
 chatRouter.use(protect)
 
 chatRouter.post("/start", async (req, res) => {
@@ -203,4 +205,3 @@ chatRouter.delete("/:chatId/message/:messageId", async (req, res) => {
 })
 
 
-export const chatRouter = express.Router(); 
